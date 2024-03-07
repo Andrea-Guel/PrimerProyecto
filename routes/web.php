@@ -49,10 +49,10 @@ use PHPUnit\Framework\Attributes\Group;
     //Route:: resource('nombre_nuevo', CursosController::class)->parameters(['nombre_nuevo'=>'curso'])->names('cursos');
     Route:: resource('cursos',CursosController::class);
 
-    Route::view('nosotros', 'nosotros')->name('nosotros');
+    Route:: view('nosotros', 'nosotros')->name('nosotros');
 
-    Route::get('contactanos', [ContactanosController::class, 'index'])->name('contactanos.index');
-    Route::post('contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
+    Route:: get('contactanos', [ContactanosController::class, 'index'])->name('contactanos.index');
+    Route:: post('contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 
     // Route::get('contactanos', function(){
 
@@ -62,7 +62,7 @@ use PHPUnit\Framework\Attributes\Group;
 
     // })->name('contactanos');
 
- /*
+/*
     Route::get('Curso/{Variable1}/{variable2?}', function($Variable1, $variable2 = null){
     if($variable2){
         return("Curso y $Variable1, asi como $variable2");
@@ -71,3 +71,4 @@ use PHPUnit\Framework\Attributes\Group;
     }
     });
  */
+

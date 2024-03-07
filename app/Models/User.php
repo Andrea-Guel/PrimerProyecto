@@ -13,6 +13,8 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $table= "users";
+
     /**
      * The attributes that are mass assignable.
      *
@@ -22,6 +24,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'rol',
+        'tel'
     ];
 
     /**
@@ -49,7 +53,6 @@ class User extends Authenticatable
         return new Attribute(
             // Este de aqui es un Accesores, pone las primeras letras del nombre en mayusculas cada que ingreses al nombre
             get: fn($value) => ucwords($value),
-             
             // Este de aqui es un mutuador, cambia y guarda a minusculas el nombre
             set:function($value){
                 return strtolower($value);

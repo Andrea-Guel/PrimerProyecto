@@ -17,7 +17,7 @@ class CursoSeeder extends Seeder
         // $curso->descripcion = 'El mejor framework de PhP';
         // $curso->categoria = 'Desarrollo web';
         // $curso-> save();
-        Curso::factory(50)->create();
+       // Curso::factory(50)->create();
 
     }
 }
